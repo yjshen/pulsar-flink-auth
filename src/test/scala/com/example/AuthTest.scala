@@ -41,7 +41,6 @@ class AuthTest extends FlinkTest {
       PulsarSourceBuilder
         .builder(new SimpleStringSchema())
         .pulsarAllClientConf(confData)
-        //.authentication("org.apache.pulsar.client.impl.auth.AuthenticationToken", "token:" + AUTH_TOKEN)
         .serviceUrl(SERVICE_URL)
         .topic(INPUT_TOPIC)
         .subscriptionName(SUBSCRIPTION_NAME)
